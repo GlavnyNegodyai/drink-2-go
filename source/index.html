@@ -7,11 +7,14 @@
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__logo-wrapper">
-        <img class="header__logo" src="" alt="Лого Drink2Go"/>
+        <img class="header__logo" src="../../icons/leaf.svg" alt="Лого Drink2Go"/>
       </div>
       <nav class="header__nav">
         <li class="header__nav-element"></li>
@@ -22,7 +25,8 @@
     <main>
       <section class="hero">
         <div class="hero__swiper-card">
-          <img alt="Алюминиевая банка с кофе"/>
+          <img alt="Алюминиевая банка с кофе" src="../../images/flat_white_img.webp"
+          srcset="../../images/flat_white_img.webp 1x, ../../images/flat_white_img(x2).webp 2x"/>
           <h3>Новинка!</h3>
           <h1 class="hero__main-headline">Декаф Флэт Уайт</h1>
           <p>
@@ -132,7 +136,62 @@
           </div>
           <ul class="catalogue__cards">
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе"/>
+              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-1.webp" srcset="../../images/coffee-can-1.webp 1x, ../../images/coffee-can-1(x2).webp 2x"/>
+              <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
+              <p class="catalogue__card-paragraph">
+                Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <div class="catalogue__card-bottom">
+                <span class="catalogue__card-price"></span>
+                <button class="common-button"></button>
+              </div>
+            </li>
+            <li class="catalogue__card">
+              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-2.webp" srcset="../../images/coffee-can-2.webp 1x, ../../images/coffee-can-2(x2).webp 2x"/>
+              <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
+              <p class="catalogue__card-paragraph">
+                Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <div class="catalogue__card-bottom">
+                <span class="catalogue__card-price"></span>
+                <button class="common-button"></button>
+              </div>
+            </li>
+            <li class="catalogue__card">
+              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-3.webp" srcset="../../images/coffee-can-3.webp 1x, ../../images/coffee-can-3(x2).webp 2x"/>
+              <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
+              <p class="catalogue__card-paragraph">
+                Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <div class="catalogue__card-bottom">
+                <span class="catalogue__card-price"></span>
+                <button class="common-button"></button>
+              </div>
+            </li>
+            <li class="catalogue__card">
+              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-4.webp" srcset="../../images/coffee-can-4.webp 1x, ../../images/coffee-can-4(x2).webp 2x"/>
+              <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
+              <p class="catalogue__card-paragraph">
+                Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <div class="catalogue__card-bottom">
+                <span class="catalogue__card-price"></span>
+                <button class="common-button"></button>
+              </div>
+            </li>
+            <li class="catalogue__card">
+              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-5.webp" srcset="../../images/coffee-can-5.webp 1x, ../../images/coffee-can-5(x2).webp 2x"/>
+              <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
+              <p class="catalogue__card-paragraph">
+                Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <div class="catalogue__card-bottom">
+                <span class="catalogue__card-price"></span>
+                <button class="common-button"></button>
+              </div>
+            </li>
+            <li class="catalogue__card">
+              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-6.webp" srcset="../../images/coffee-can-6.webp 1x, ../../images/coffee-can-6(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
@@ -144,11 +203,11 @@
             </li>
           </ul>
           <div class="catalogue__pagination">
-            <button class="catalogue__pagination-button catalogue__pagination-button--next"><</button>
+            <button class="catalogue__pagination-button catalogue__pagination-button--next">0</button>
             <button class="catalogue__pagination-button catalogue__pagination-button--page">1</button>
             <button class="catalogue__pagination-button catalogue__pagination-button--page">2</button>
             <button class="catalogue__pagination-button  catalogue__pagination-button--page">3</button>
-            <button class="catalogue__pagination-button  catalogue__pagination-button--previous">></button>
+            <button class="catalogue__pagination-button  catalogue__pagination-button--previous">0</button>
           </div>
         </div>
       </section>
@@ -156,7 +215,7 @@
     </main>
     <footer class="footer">
       <div class="footer__logo-and-social-links">
-        <div class="footer__logo-wrapper">
+        <div class="footer__logo-wrapper">-
           <img class="footer__logo"/>
         </div>
         <div class="footer__social-links">
