@@ -14,54 +14,54 @@
   <body class="page__body">
     <header class="header">
       <div class="header__logo-wrapper">
-        <img class="header__logo" src="../../icons/leaf.svg" alt="Лого Drink2Go"/>
+        <img class="header__logo" src="../../icons/drink-2-go-logo.svg" alt="" width="32" height="36"/>
       </div>
       <nav class="header__nav">
-        <li class="header__nav-element"></li>
-        <li class="header__nav-element"></li>
-        <li class="header__nav-element"></li>
+        <li class="header__nav-element">Б</li>
+        <li class="header__nav-element">Л</li>
+        <li class="header__nav-element">Я</li>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <div class="hero__swiper-card">
+        <div class="hero__swiper-card" id="swiper-card-1">
           <img alt="Алюминиевая банка с кофе" src="../../images/flat_white_img.webp"
           srcset="../../images/flat_white_img.webp 1x, ../../images/flat_white_img(x2).webp 2x"/>
-          <h3>Новинка!</h3>
+          <strong class="purple-text hero__strong">Новинка!</strong>
           <h1 class="hero__main-headline">Декаф Флэт Уайт</h1>
           <p>
             Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
           </p>
-          <div>
+          <div class="hero__swiper-price-and-order">
             <div>
-              <span>295р</span>
-              <span>225р</span>
+              <span class="hero__swiper-old-price">295р</span>
+              <b class="hero__swiper-new-price">225р</b>
             </div>
             <button class="hero__button common-button">Заказать</button>
           </div>
         </div>
       </section>
       <section class="advantages">
-        <h3 class="advantages__secondary-headline section__secondary-headline">Преимущества</h3>
+        <strong class="purple-text advantages__strong">Преимущества</strong>
         <h2 class="advantages__main-headline section__main-headline">Главные причины выбрать Drink2Go</h2>
         <div class="advantages__cards">
           <div class="advantages__card">
-            <img/>
+            <img src="../../images/time.svg"/>
             <h3 class="advantages__card-headline">Скорость</h3>
             <p class="advantages__card-paragraph">Готовый напиток всегда под рукой — просто открой банку</p>
           </div>
           <div class="advantages__card">
-            <img/>
+            <img src="../../images/pocket.svg"/>
             <h3 class="advantages__card-headline">Удобство</h3>
             <p class="advantages__card-paragraph">Легко помещается и в карман, и в маленькую сумочку</p>
           </div>
           <div class="advantages__card">
-            <img/>
+            <img src="../../images/lightning.svg"/>
             <h3 class="advantages__card-headline">Бодрость</h3>
             <p class="advantages__card-paragraph">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </div>
           <div class="advantages__card">
-            <img/>
+            <img src="../../images/leaf.svg"/>
             <h3 class="advantages__card-headline">Экологичность</h3>
             <p class="advantages__card-paragraph">Вся упаковка сделана из перерабатываемых материалов</p>
           </div>
@@ -69,136 +69,136 @@
       </section>
       <section class="catalogue">
         <div class="catalogue__head">
-          <h3 class="catalogue__secondary-headline section__secondary-headline">Каталог</h3>
+          <strong class="purple-text catalogue__strong">Каталог</strong>
           <h2 class="catalogue__main-headline section__main-headline">Каталог кофейных напитков</h2>
         </div>
-        <aside class="catalogue__aside">
-          <div class="catalogue__aside-price-wrapper">
-            <h3 class="catalogue__aside-headline">Цена</h3>
-            <input type="range" class="catalogue__aside-input catalogue__aside-input--range"/>
-            <div class="catalogue__aside-price-limits">
-              <input class="catalogue__aside-price-limit catalogue__aside-price-limit--min">
+        <aside class="aside">
+          <div class="aside__price-wrapper">
+            <h3 class="aside__headline">Цена</h3>
+            <input type="range" class="aside__input aside__input--range"/>
+            <div class="aside__price-limits">
+              <input class="aside__price-limit aside__price-limit--min">
               <span class="">-</span>
-              <input class="catalogue__aside-price-limit catalogue__aside-price-limit--max">
+              <input class="aside__price-limit aside__price-limit--max">
             </div>
           </div>
-          <div class="catalogue__aside-milk-presence">
-            <h3 class="catalogue__aside-headline">Наличие молока</h3>
-            <div class="catalogue__aside-input-wrapper">
+          <div class="aside__milk-presence">
+            <h3 class="aside__headline">Наличие молока</h3>
+            <div class="aside__input-wrapper">
               <input type="radio" id="no-milk-preference">
               <label>Неважно</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="radio" id="animal-milk-only">
               <label>Только животное</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="radio" id="plant-based-milk-only">
               <label>Только растительное</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="radio" id="no-milk">
               <label>Без молока</label>
             </div>
           </div>
-          <div class="catalogue__aside-country">
-            <h3 class="catalogue__aside-headline">Страна произрастания</h3>
-            <div class="catalogue__aside-input-wrapper">
+          <div class="aside__country">
+            <h3 class="aside__headline">Страна произрастания</h3>
+            <div class="aside__input-wrapper">
               <input type="checkbox">
               <label>Бразилия</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="checkbox">
               <label>Эфиопия</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="checkbox">
               <label>Колумбия</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="checkbox">
               <label>Коста-Рика</label>
             </div>
-            <div class="catalogue__aside-input-wrapper">
+            <div class="aside__input-wrapper">
               <input type="checkbox">
               <label>Перу</label>
             </div>
           </div>
-          <div class="catalogue__aside-bottom">
-            <button class="common-button catalogue__aside-accept-button">Применить</button>
-            <button class="common-button catalogue__aside-reset-button">Сбросить</button>
+          <div class="aside__bottom">
+            <button class="common-button aside__accept-button">Применить</button>
+            <button class="common-button aside__reset-button">Сбросить</button>
           </div>
         </aside>
         <div class="catalogue__cards-wrapper">
-          <div class="catalogue__cards-sorting">
-            <p>Сортировка:</p>
-            <button>по умолчанию</button>
+          <div class="catalogue__sorting">
+            <p class="catalogue__sorting-text">Сортировка:</p>
+            <button class="catalogue__sorting-button">по умолчанию</button>
           </div>
           <ul class="catalogue__cards">
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-1.webp" srcset="../../images/coffee-can-1.webp 1x, ../../images/coffee-can-1(x2).webp 2x"/>
+              <img class="catalogue__card-product" alt="Алюминиевая банка с кофе" src="../../images/coffee-can-1.webp" srcset="../../images/coffee-can-1.webp 1x, ../../images/coffee-can-1(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
               <div class="catalogue__card-bottom">
-                <span class="catalogue__card-price"></span>
-                <button class="common-button"></button>
+                <span class="catalogue__card-price">225₽</span>
+                <button class="common-button catalogue__order-button">В корзину</button>
               </div>
             </li>
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-2.webp" srcset="../../images/coffee-can-2.webp 1x, ../../images/coffee-can-2(x2).webp 2x"/>
+              <img class="catalogue__card-product" alt="Алюминиевая банка с кофе" src="../../images/coffee-can-2.webp" srcset="../../images/coffee-can-2.webp 1x, ../../images/coffee-can-2(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
               <div class="catalogue__card-bottom">
-                <span class="catalogue__card-price"></span>
-                <button class="common-button"></button>
+                <span class="catalogue__card-price">225₽</span>
+                <button class="common-button catalogue__order-button">В корзину</button>
               </div>
             </li>
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-3.webp" srcset="../../images/coffee-can-3.webp 1x, ../../images/coffee-can-3(x2).webp 2x"/>
+              <img class="catalogue__card-product" alt="Алюминиевая банка с кофе" src="../../images/coffee-can-3.webp" srcset="../../images/coffee-can-3.webp 1x, ../../images/coffee-can-3(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
               <div class="catalogue__card-bottom">
-                <span class="catalogue__card-price"></span>
-                <button class="common-button"></button>
+                <span class="catalogue__card-price">225₽</span>
+                <button class="common-button catalogue__order-button">В корзину</button>
               </div>
             </li>
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-4.webp" srcset="../../images/coffee-can-4.webp 1x, ../../images/coffee-can-4(x2).webp 2x"/>
+              <img class="catalogue__card-product" alt="Алюминиевая банка с кофе" src="../../images/coffee-can-4.webp" srcset="../../images/coffee-can-4.webp 1x, ../../images/coffee-can-4(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
               <div class="catalogue__card-bottom">
-                <span class="catalogue__card-price"></span>
-                <button class="common-button"></button>
+                <span class="catalogue__card-price">225₽</span>
+                <button class="common-button catalogue__order-button">В корзину</button>
               </div>
             </li>
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-5.webp" srcset="../../images/coffee-can-5.webp 1x, ../../images/coffee-can-5(x2).webp 2x"/>
+              <img class="catalogue__card-product" alt="Алюминиевая банка с кофе" src="../../images/coffee-can-5.webp" srcset="../../images/coffee-can-5.webp 1x, ../../images/coffee-can-5(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
               <div class="catalogue__card-bottom">
-                <span class="catalogue__card-price"></span>
-                <button class="common-button"></button>
+                <span class="catalogue__card-price">225₽</span>
+                <button class="common-button catalogue__order-button">В корзину</button>
               </div>
             </li>
             <li class="catalogue__card">
-              <img alt="Алюминиевая банка с кофе" src="../../images/coffee-can-6.webp" srcset="../../images/coffee-can-6.webp 1x, ../../images/coffee-can-6(x2).webp 2x"/>
+              <img class="catalogue__card-product" alt="Алюминиевая банка с кофе" src="../../images/coffee-can-6.webp" srcset="../../images/coffee-can-6.webp 1x, ../../images/coffee-can-6(x2).webp 2x"/>
               <h3 class="catalogue__card-headline">Декаф Флэт Уайт</h3>
               <p class="catalogue__card-paragraph">
                 Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
               <div class="catalogue__card-bottom">
-                <span class="catalogue__card-price"></span>
-                <button class="common-button"></button>
+                <span class="catalogue__card-price">225₽</span>
+                <button class="common-button catalogue__order-button">В корзину</button>
               </div>
             </li>
           </ul>

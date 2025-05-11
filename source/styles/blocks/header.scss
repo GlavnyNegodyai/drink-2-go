@@ -1,4 +1,14 @@
 .header {
   padding: 10px 15px;
   height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav{
+  display: inline;
+}
+
+.header__nav-element{
+  display: inline;
 }

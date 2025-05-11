@@ -1,0 +1,29 @@
+.hero{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero__swiper-card{
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.hero__swiper-price-and-order{
+  display: flex;
+  padding: 0 25px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__swiper-old-price{
+  text-decoration: line-through;
+  color: $primary-color;
+}
+
+.hero__swiper-new-price{
+  font-size: 1.25rem;
+}
+
+#swiper-card-1{
+  background-color: $flat-white;
+}

@@ -1,0 +1,80 @@
+.catalogue{
+  background-color: $lightest-grey;
+}
+
+.catalogue__head{
+  text-align: center;
+}
+
+.catalogue__sorting{
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogue__sorting-text{
+  display: inline;
+}
+
+.catalogue__sorting-button{
+  display: inline;
+  border: none;
+  background-color: transparent;
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.catalogue__cards{
+  padding: 0;
+  list-style: none;
+}
+
+.catalogue__card{
+  margin-bottom: 20px;
+  padding: 40px 20px 20px;
+  background-color: $base-white;
+  border-radius: 4px;
+  max-height: 420px;
+}
+
+.catalogue__card:last-child{
+  margin: 0;
+}
+
+.catalogue__card-product{
+  margin: 0 auto;
+  display: block;
+}
+
+.catalogue__card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalogue__card-price{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.catalogue__order-button{
+  font-size: 0.875rem;
+  padding: 0.375rem 1.25rem;
+}
+
+/*СТИЛИ ДЛЯ ПАГИНАЦИИ*/
+
+.catalogue__pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogue__pagination-button{
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: $primary-color;
+  text-align: center;
+}
