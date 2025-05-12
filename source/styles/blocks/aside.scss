@@ -6,50 +6,6 @@
   display: inline;
 }
 
-<<<<<<< HEAD
-=======
-input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    outline: none;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: $base-white;
-    border: 3px solid $primary-lighter;
-    cursor: pointer;
-
-}
-
-input[type="range"]::-moz-range-thumb {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: $base-white;
-    border: 3px solid $primary-lighter;
-    cursor: pointer;
-}
-
-input[type="range"]::-ms-thumb {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: $base-white;
-    border: 3px solid $primary-lighter;
-    cursor: pointer;
-}
-
-input[type="range"]::-webkit-slider-runnable-track {
-    height: 2px;
-    background-color: #E2E2E2;
-}
-
->>>>>>> 7d13f8006efaceddb77f667b66a69f44990cbcfe
 .aside__price-limits{
   display: flex;
   align-items: center;
@@ -57,11 +13,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .aside__price-limit{
-<<<<<<< HEAD
   border: 2px solid $primary-lighter;
-=======
-  border: 3px solid $primary-lighter;
->>>>>>> 7d13f8006efaceddb77f667b66a69f44990cbcfe
   border-radius: 4px;
   line-height: 24px;
   padding: 6px 10px;
@@ -69,7 +21,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   box-sizing: border-box;
   width: 118px;
 }
-<<<<<<< HEAD
 
 /* КОД ДЛЯ RANGE С ДВУМЯ THUMB ВЗЯТ У ci-swissuplabs: https://github.com/swissup/range-slider?tab=readme-ov-file */
 
@@ -278,5 +229,3 @@ input[type="checkbox"]:checked + label::after {
   background-color: $base-white;
   color: $primary-color;
 }
-=======
->>>>>>> 7d13f8006efaceddb77f667b66a69f44990cbcfe

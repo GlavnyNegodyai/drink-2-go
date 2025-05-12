@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Это код не мой, взял в открытом доступе. Немного изменил под себя.
  * License: MIT
@@ -142,6 +141,3 @@ class RangeSlider extends HTMLElement {
 }
 
 customElements.define('range-slider', RangeSlider);
-=======
-/* в этот файл добавляет скрипты*/
->>>>>>> 7d13f8006efaceddb77f667b66a69f44990cbcfe
