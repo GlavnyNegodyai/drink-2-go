@@ -28,7 +28,10 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}favicons/**/*.{png,svg}`,
   `${PATH_TO_SOURCE}vendor/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
+<<<<<<< HEAD
   `${PATH_TO_SOURCE}icons/**/*`,
+=======
+>>>>>>> 7d13f8006efaceddb77f667b66a69f44990cbcfe
   `!${PATH_TO_SOURCE}**/README.md`,
 ];
 let isDevelopment = true;
