@@ -1,0 +1,231 @@
+.aside__price-limit--min{
+  display: inline;
+}
+
+.aside__price-limit--max{
+  display: inline;
+}
+
+.aside__price-limits{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside__price-limit{
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 6px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 118px;
+}
+
+/* КОД ДЛЯ RANGE С ДВУМЯ THUMB ВЗЯТ У ci-swissuplabs: https://github.com/swissup/range-slider?tab=readme-ov-file */
+
+range-slider {
+
+  --thumb-width: 24px;
+  --thumb-height: var(--thumb-width);
+  --thumb-mobile-scale: 1.4;
+  --thumb-border-radius: 50%;
+  --thumb-bg: 0 0 0;
+  --thumb-mobile-scale: 1.4;
+  --track-height: 4px;
+  --track-border-radius: 0;
+  width: 100%;
+
+  position: relative;
+  display: inline-block;
+}
+range-slider input {
+  margin: 0;
+  width: 100%;
+  -webkit-appearance: none;
+}
+range-slider::before,
+range-slider input::-webkit-slider-runnable-track {
+  background: $primary-lighter;
+  height: var(--track-height);
+  border-radius: var(--track-border-radius);
+}
+range-slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: $base-white;
+  border: 2px solid $primary-lighter;
+  border-radius: var(--thumb-border-radius);
+  height: var(--thumb-height);
+  width: var(--thumb-width);
+  margin-top: calc(var(--track-height) / 2 - var(--thumb-height) / 2);
+  transition: box-shadow 200ms ease-out;
+  box-sizing: border-box;
+}
+range-slider input::-moz-range-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: $base-white;
+  border: 2px solid $primary-lighter;
+  border-radius: var(--thumb-border-radius);
+  height: var(--thumb-height);
+  width: var(--thumb-width);
+  margin-top: calc(var(--track-height) / 2 - var(--thumb-height) / 2);
+  transition: box-shadow 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+range-slider .filler {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+range-slider .range {
+  position: absolute;
+  left: 0;
+  height: 0 !important;
+  overflow: visible;
+}
+range-slider .range::-webkit-slider-thumb {
+  position: relative;
+  z-index: 2;
+}
+range-slider .range:first-child::-webkit-slider-thumb {
+  z-index: 3;
+}
+
+@-moz-document url-prefix() {
+  range-slider .range::-moz-range-track {
+      background: transparent !important;
+  }
+  range-slider::before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      top: calc(50% - var(--track-height) / 2);
+  }
+  range-slider .range {
+      top: calc(50% + 20px);
+  }
+  range-slider .range::-moz-range-thumb {
+      transform: translateY(-20px);
+  }
+}
+
+/*СТИЛИ ДЛЯ РАДИОКНОПОК*/
+
+.aside__input-wrapper:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.aside__input-wrapper input[type="radio"] {
+    display: none;
+}
+
+.aside__milk-presence label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.aside__milk-presence label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid $base-grey;
+    box-sizing: border-box;
+}
+
+.aside__milk-presence label::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: $base-white;
+    border-color: $primary-color;
+}
+
+input[type="radio"]:checked + label::after {
+  background-color: $primary-color;
+}
+
+/*СТИЛИ ДЛЯ ЧЕКБОКСОВ*/
+
+.aside__country-form{
+  margin-bottom: 30px;
+}
+
+.aside__country .aside__input-wrapper label{
+  margin-left: 20px;
+}
+
+.aside__country .aside__input-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.aside__country label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.aside__country label::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 24px;
+    border-radius: 100px;
+    background-color: $base-grey;
+    box-sizing: border-box;
+    transition: 0.1s ease-out;
+}
+
+.aside__country label::after {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $base-white;
+  transition: 0.1s ease-out;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-color: $primary-color;
+}
+
+input[type="checkbox"]:checked + label::after {
+  left: 0px;
+}
+
+/*КНОПКИ "ПРИМЕНИТЬ" И "СБРОСИТЬ"*/
+
+.aside__bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aside__reset-button{
+  background-color: $base-white;
+  color: $primary-color;
+}
